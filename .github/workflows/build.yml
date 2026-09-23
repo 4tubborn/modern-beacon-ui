@@ -27,7 +27,12 @@ jobs:
         run: chmod +x ./gradlew
       - name: build
        # run: ./gradlew build
-        run: ./gradlew build --stacktrace --info -Dorg.gradle.internal.repository.max.retries=10
+        run: |
+          ./gradlew build --stacktrace \
+            -Dorg.gradle.internal.repository.max.retries=10 \
+            -Dorg.gradle.internal.repository.initial.backoff=2000 \
+            -Dsun.net.client.defaultConnectTimeout=60000 \
+            -Dsun.net.client.defaultReadTimeout=60000
       - name: capture build artifacts
         uses: actions/upload-artifact@v7
         with:
