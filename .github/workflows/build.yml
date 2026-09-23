@@ -19,6 +19,10 @@ jobs:
         with:
           java-version: '25'
           distribution: 'microsoft'
+      # 加在 setup-java 之后，build 之前
+      - name: Setup Gradle
+        uses: gradle/actions/setup-gradle@v4
+
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
       - name: build
