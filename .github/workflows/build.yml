@@ -22,6 +22,8 @@ jobs:
       # 加在 setup-java 之后，build 之前
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.7.1'
 
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
