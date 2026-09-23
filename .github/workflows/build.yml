@@ -28,7 +28,7 @@ jobs:
 
       # 加在 setup-java 之后，build 之前
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
+        uses: gradle/actions/setup-gradle@v6
         with:
           gradle-version: '9.7.1'
           cache-disabled: true
