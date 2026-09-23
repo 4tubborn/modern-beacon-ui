@@ -1,0 +1,9 @@
+{
+  "container.beacon.payment_tooltip": "Add ingot or crystal",
+  "modmenu.nameTranslation.beaconui": "Modern Beacon GUI",
+  "modmenu.descriptionTranslation.beaconui": "Make Beacon GUI more like other container GUIs",
+  "modmenu.summaryTranslation.beaconui": "Make Beacon GUI more like other container GUIs",
+  "options.beaconui.title": "Modern Beacon UI",
+  "options.beaconui.category.general": "General",
+  "options.beaconui.patch_quick_move": "Patch Quick Move"
+}

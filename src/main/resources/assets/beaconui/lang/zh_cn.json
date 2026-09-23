@@ -1,0 +1,9 @@
+{
+  "container.beacon.payment_tooltip": "放入锭或晶体",
+  "modmenu.nameTranslation.beaconui": "现代信标UI",
+  "modmenu.descriptionTranslation.beaconui": "使信标GUI更像其他容器GUI",
+  "modmenu.summaryTranslation.beaconui": "使信标GUI更像其他容器GUI",
+  "options.beaconui.title": "现代信标UI",
+  "options.beaconui.category.general": "通用",
+  "options.beaconui.patch_quick_move": "修补快速移动物品"
+}

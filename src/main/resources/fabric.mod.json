@@ -1,0 +1,49 @@
+{
+	"schemaVersion": 1,
+	"id": "beaconui",
+	"version": "${version}",
+	"name": "Modern Beacon GUI",
+	"description": "Make Beacon GUI more like other container GUIs",
+	"authors": [
+		"4ubborn"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/beaconui/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"stubborn.beaconui.ModernBeaconGUI"
+		],
+		"client": [
+			"stubborn.beaconui.client.ModernBeaconGUIClient"
+		],
+		"modmenu": [
+			"stubborn.beaconui.client.gui.screen.ModMenuCompact"
+		]
+	},
+	"mixins": [
+		"beaconui.mixins.json",
+		{
+			"config": "beaconui.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+			},
+			"update_checker": false
+		}
+	},
+	"accessWidener": "beaconui.accesswidener"
+}
