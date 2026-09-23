@@ -27,6 +27,18 @@ jobs:
 
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
+
+      - name: test Fabric Maven
+        run: |
+          curl -I --retry 5 \
+            https://maven.fabricmc.net/net/fabricmc/fabric-loom-remap/net.fabricmc.fabric-loom-remap.gradle.plugin/1.18-SNAPSHOT/
+
+      - name: test Fabric Loom plugin
+        run: |
+          curl -fL --retry 5 \
+          https://maven.fabricmc.net/net/fabricmc/fabric-loom-remap/net.fabricmc.fabric-loom-remap.gradle.plugin/1.18-SNAPSHOT/net.fabricmc.fabric-loom-remap.gradle.plugin-1.18-SNAPSHOT.pom
+        
+
       - name: build
         run: gradle build --stacktrace
       - name: capture build artifacts
