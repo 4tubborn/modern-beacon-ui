@@ -24,9 +24,16 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '9.7.1'
+          cache-disabled: true
 
       - name: make gradle wrapper executable
         run: chmod +x ./gradlew
+
+      - name: gradle info
+        run: |
+          gradle --version
+          java -version
+          cat gradle/wrapper/gradle-wrapper.properties
 
       #- name: test Fabric Maven
       #  run: |
