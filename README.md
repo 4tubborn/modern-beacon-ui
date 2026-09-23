@@ -13,6 +13,6 @@
 
 ## Dependencies
 
-* Fabric API: required
-* Cloth Config API: optional
-* Mod Menu: optional
+* Fabric API: Required
+* Cloth Config API: Optional
+* Mod Menu: Optional
