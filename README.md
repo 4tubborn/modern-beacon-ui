@@ -2,9 +2,10 @@
 
 ## Features
 
-* Resize GUI: Make the size of beacon GUI as big as other container GUIs.
-* Quick Move: Add quick move for the payment slot.
-* Icon cycling: Add a cycling background for the payment slot.
+* Resize GUI: Standardizes the beacon interface scale to match other container GUIs.
+* Quick Move: Adds quick move for the payment slot.
+* Slot Overlay: Adds a cycling background for the payment slot.
+* Rearrangement: Removes the useless cancel button and item sprites.
 
 ## Important Notes
 

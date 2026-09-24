@@ -8,10 +8,9 @@
 		"4ubborn"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/4tubborn/modern-beacon-ui"
 	},
-	"license": "MIT",
+	"license": "GPL-3.0-only",
 	"icon": "assets/beaconui/icon.png",
 	"environment": "*",
 	"entrypoints": {
