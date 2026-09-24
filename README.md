@@ -16,5 +16,3 @@
 * Fabric API: Required
 * Cloth Config API: Optional
 * Mod Menu: Optional
-
-aaaaaaaaaaa
